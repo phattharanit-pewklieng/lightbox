@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div class="container">
+  <div class="img-con">
+    <div class="img-item">
+      <img onclick="openModal(); currentSlide(1)"
+        src="https://images.unsplash.com/photo-1683631167883-d4714617f826?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDE4fDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=700&q=60"
+        alt="">
+    </div>
+    <div class="img-item">
+      <img onclick="openModal(); currentSlide(2)"
+        src="https://images.unsplash.com/photo-1683470432347-7b40520fb583?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDl8NnNNVmpUTFNrZVF8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=700&q=60"
+        alt="">
+    </div>
+    <div class="img-item">
+      <img onclick="openModal(); currentSlide(3)"
+        src="https://images.unsplash.com/photo-1682936995563-ab9e2afb7ea5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDZ8NnNNVmpUTFNrZVF8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=700&q=60"
+        alt="">
+    </div>
+    <div class="img-item">
+      <img onclick="openModal(); currentSlide(4)"
+        src="https://images.unsplash.com/photo-1683984230239-4b685398d50e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDEyfDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=700&q=60"
+        alt="">
+    </div>
+  </div>
+
+  <!-- Modal/Lightbox -->
+  <div id="myModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+      <div class="mySlides">
+        <img
+          src="https://images.unsplash.com/photo-1683631167883-d4714617f826?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDE4fDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=700&q=60"
+          alt="">
+      </div>
+    
+
+      <div class="mySlides">
+        <img
+          src="https://images.unsplash.com/photo-1683470432347-7b40520fb583?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDl8NnNNVmpUTFNrZVF8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=700&q=60"
+          alt="">
+      </div>
+
+      <div class="mySlides">
+        <img
+          src="https://images.unsplash.com/photo-1682936995563-ab9e2afb7ea5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDZ8NnNNVmpUTFNrZVF8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=700&q=60"
+          alt="">
+      </div>
+
+      <div class="mySlides">
+        <img
+          src="https://images.unsplash.com/photo-1683984230239-4b685398d50e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDEyfDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=700&q=60"
+          alt="">
+      </div>
+
+      <!-- Next/Previous Controls -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+      <a class="next" onclick="plusSlides(1)">&#10095</a>
+      
+      <div class="img-thb-con">
+        <!-- Thumbnail images controls -->
+        <div class="img-thb">
+          <img class="demo" onclick="currentSlide(1)"
+            src="https://images.unsplash.com/photo-1683631167883-d4714617f826?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDE4fDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=700&q=60"
+            alt="">
+        </div>
+      
+        <div class="img-thb">
+      
+          <img class="demo" onclick="currentSlide(2)"
+            src="https://images.unsplash.com/photo-1684151941972-2d456c0e2b3b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDN8NnNNVmpUTFNrZVF8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=700&q=60"
+            alt="">
+        </div>
+      
+        <div class="img-thb">
+      
+          <img class="demo" onclick="currentSlide(3)"
+            src="https://images.unsplash.com/photo-1683470432347-7b40520fb583?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDl8NnNNVmpUTFNrZVF8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=700&q=60"
+            alt="">
+        </div>
+      
+        <div class="img-thb">
+          <img class="demo" onclick="currentSlide(4)"
+            src="https://images.unsplash.com/photo-1683984230239-4b685398d50e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDEyfDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=700&q=60"
+            alt="">
+        </div>
+    </div>
+  </div>
+  </div>
+<div class="text">
+    <h1 >Never Stop Learnig "JavaScript"</h1>
+  <div class="geeks"></div>
+</div>
+
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
